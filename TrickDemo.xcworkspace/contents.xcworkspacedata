@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SwiftHotPatch/SwiftHotPatch.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ObjcF/ObjcF.xcodeproj">
    </FileRef>
 </Workspace>

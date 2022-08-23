@@ -49,6 +49,11 @@
 
 @implementation C
 
+- (void)hello{
+    
+    NSLog(@"my class is not %@, my owner is%@", self.class,self.owner);
+    
+}
 @end
 
 
@@ -58,12 +63,12 @@
 
 @implementation B (x)
 
-+(instancetype)alloc{
-    //方法1 通过对A实现一个category 在alloc里面通过方法转发直接替换为子类B
-    Method m = class_getClassMethod([NSObject class], @selector(alloc));
-    IMP i = method_getImplementation(m);
-    return ((id(*)(id, SEL))i)([C class], @selector(alloc));
-}
+//+(instancetype)alloc{
+////    方法1 通过对A实现一个category 在alloc里面通过方法转发直接替换为子类B
+//    Method m = class_getClassMethod([NSObject class], @selector(alloc));
+//    IMP i = method_getImplementation(m);
+//    return ((id(*)(id, SEL))i)([C class], @selector(alloc));
+//}
 
 @end
 
@@ -75,7 +80,12 @@
     [a hello];
     
     B *b = [[B alloc] init];
+    //方法2 通过直接设置某个类的基类 ，只对当前对象有效
+    object_setClass(b,C.class);
     [b hello];
+    
+    B *b1 = [[B alloc] init];
+    [b1 hello];
 }
 
 @end

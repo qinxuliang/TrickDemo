@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
 }
 
-public class TestClass: NSObject {
+public class TestClass{
     public func hehe() {
        print("\(#function) in \(type(of: self))");
         hehe1()

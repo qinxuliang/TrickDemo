@@ -19,6 +19,8 @@
 		ADDC23F028B36D30001A3F86 /* ObjcFUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDC23EF28B36D30001A3F86 /* ObjcFUITestsLaunchTests.m */; };
 		ADDC23FF28B37038001A3F86 /* ClassInitHook.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDC23FE28B37038001A3F86 /* ClassInitHook.m */; };
 		ADDC240228B377D5001A3F86 /* MethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDC240128B377D5001A3F86 /* MethodSwizzle.m */; };
+		ADF5BD0228C203D40091BE67 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF5BD0128C203D40091BE67 /* ViewController1.m */; };
+		ADF5BD2A28C732880091BE67 /* GetUserDefineClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF5BD2928C732880091BE67 /* GetUserDefineClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		ADDC23FE28B37038001A3F86 /* ClassInitHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassInitHook.m; sourceTree = "<group>"; };
 		ADDC240028B377D5001A3F86 /* MethodSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzle.h; sourceTree = "<group>"; };
 		ADDC240128B377D5001A3F86 /* MethodSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzle.m; sourceTree = "<group>"; };
+		ADF5BD0028C203D40091BE67 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		ADF5BD0128C203D40091BE67 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		ADF5BD2828C732880091BE67 /* GetUserDefineClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetUserDefineClass.h; sourceTree = "<group>"; };
+		ADF5BD2928C732880091BE67 /* GetUserDefineClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetUserDefineClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,10 @@
 				ADDC23CB28B36D2E001A3F86 /* SceneDelegate.m */,
 				ADDC23CD28B36D2E001A3F86 /* ViewController.h */,
 				ADDC23CE28B36D2E001A3F86 /* ViewController.m */,
+				ADF5BD0028C203D40091BE67 /* ViewController1.h */,
+				ADF5BD0128C203D40091BE67 /* ViewController1.m */,
+				ADF5BD2828C732880091BE67 /* GetUserDefineClass.h */,
+				ADF5BD2928C732880091BE67 /* GetUserDefineClass.m */,
 				ADDC23D028B36D2E001A3F86 /* Main.storyboard */,
 				ADDC23D328B36D2F001A3F86 /* Assets.xcassets */,
 				ADDC23D528B36D2F001A3F86 /* LaunchScreen.storyboard */,
@@ -285,11 +295,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADDC23FF28B37038001A3F86 /* ClassInitHook.m in Sources */,
+				ADF5BD0228C203D40091BE67 /* ViewController1.m in Sources */,
 				ADDC240228B377D5001A3F86 /* MethodSwizzle.m in Sources */,
 				ADDC23CF28B36D2E001A3F86 /* ViewController.m in Sources */,
 				ADDC23C928B36D2E001A3F86 /* AppDelegate.m in Sources */,
 				ADDC23DA28B36D2F001A3F86 /* main.m in Sources */,
 				ADDC23CC28B36D2E001A3F86 /* SceneDelegate.m in Sources */,
+				ADF5BD2A28C732880091BE67 /* GetUserDefineClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
